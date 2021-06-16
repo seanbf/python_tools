@@ -78,7 +78,7 @@ def generate(df):
                                         x       		= dataframe[symbol_0],
                                         y       		= dataframe[plot_df["Signal"][row]],
                                         name 			= Name,
-                                        hovertemplate 	= '%{y:.2f} ',
+                                        hovertemplate 	= '%{y:.2f}',
                                         mode            = 'markers',
                                         marker          = dict(color=plot_df["Color"][row], symbol=plot_df["Style"][row]),
                                         yaxis           = plot_df["Axis"][row]                              
@@ -210,7 +210,7 @@ if file_uploader is not None:
         if type_2 == 'markers':
             style_2    = col_style.selectbox("Style", ["circle", "square", "diamond", "cross", "x","cross-thin","x-thin","triangle-up","triangle-down","triangle-left","triangle-right",'y-up','y-down'], key="style_2")
         col_color, col_size = st.beta_columns(2)
-        color_2     = col_color.color_picker('Pick a color (Default: #636EFA)','#636EFA', key="color_2")
+        color_2     = col_color.color_picker('Pick a color (Default: #EF553B)','#EF553B', key="color_2")
         size_2      = col_size.number_input("Size", min_value=0.0, max_value=10.0, value=1.0, step=0.5, key="size_2")
         
     with st.sidebar.beta_expander("Signal 3"):
@@ -226,7 +226,7 @@ if file_uploader is not None:
         if type_3 == 'markers':
             style_3    = col_style.selectbox("Style", ["circle", "square", "diamond", "cross", "x","cross-thin","x-thin","triangle-up","triangle-down","triangle-left","triangle-right",'y-up','y-down'], key="style_3")
         col_color, col_size = st.beta_columns(2)
-        color_3     = col_color.color_picker('Pick a color (Default: #636EFA)','#636EFA', key="color_3")
+        color_3     = col_color.color_picker('Pick a color (Default: #00CC69)','#00CC69', key="color_3")
         size_3      = col_size.number_input("Size", min_value=0.0, max_value=10.0, value=1.0, step=0.5, key="size_3")
 
     with st.sidebar.beta_expander("Signal 4"):
@@ -242,7 +242,7 @@ if file_uploader is not None:
         if type_4 == 'markers':
             style_4    = col_style.selectbox("Style", ["circle", "square", "diamond", "cross", "x","cross-thin","x-thin","triangle-up","triangle-down","triangle-left","triangle-right",'y-up','y-down'], key="style_4")
         col_color, col_size = st.beta_columns(2)
-        color_4     = col_color.color_picker('Pick a color (Default: #636EFA)','#636EFA', key="color_4")
+        color_4     = col_color.color_picker('Pick a color (Default: #AB63FA)','#AB63FA', key="color_4")
         size_4      = col_size.number_input("Size", min_value=0.0, max_value=10.0, value=1.0, step=0.5, key="size_4")
 
     with st.sidebar.beta_expander("Signal 5"):
@@ -258,7 +258,7 @@ if file_uploader is not None:
         if type_5 == 'markers':
             style_5    = col_style.selectbox("Style", ["circle", "square", "diamond", "cross", "x","cross-thin","x-thin","triangle-up","triangle-down","triangle-left","triangle-right",'y-up','y-down'], key="style_5")
         col_color, col_size = st.beta_columns(2)
-        color_5     = col_color.color_picker('Pick a color (Default: #636EFA)','#636EFA', key="color_5")
+        color_5     = col_color.color_picker('Pick a color (Default: #FFA15A)','#FFA15A', key="color_5")
         size_5      = col_size.number_input("Size", min_value=0.0, max_value=10.0, value=1.0, step=0.5, key="size_5")
 
 # Main Layout
